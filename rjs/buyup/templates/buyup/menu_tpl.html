@@ -1,0 +1,5 @@
+<ul class="list-group sidebar-menu">
+  {% for page in pages %}
+  <a class="list-group-item" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+  {% endfor %}
+</ul>

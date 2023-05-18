@@ -1,0 +1,174 @@
+body {
+	font-family: 'archiveregular', Arial, Helvetica, sans-serif;
+}
+
+.header {
+	margin-bottom: 30px;
+}
+
+.nav-link {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 30px;
+	color: white;
+}
+
+.nav-link:hover {
+	color: #8fb7d9;
+}
+
+.navbar {
+	background-color: #125a96 !important;
+	padding: 2px 0;
+}
+
+.nav-link.active {
+	color: #8fb7d9 !important;
+}
+
+.phone {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.list-group-item {
+	color: black;
+}
+
+.list-group-item:hover {
+	background-color: #4671D5;
+	border-color: #4671D5;
+	color: white;
+}
+
+.list-group-item.active {
+	background-color: #4671D5;
+	border-color: #4671D5;
+	color: white;
+}
+
+.carousel-inner {
+	border-radius: 5px;
+}
+
+.content {
+    min-height: calc(100vh - 250px);
+}
+
+.slider-text {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 26px;
+	padding-right: 20px;
+	padding-left: 20px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.index-title {
+	margin-top: 20px;
+	font-size: 24px;
+}
+
+.advantages {
+	margin-top: 20px;
+}
+
+.benefit {
+	text-align: center;
+}
+
+.benefit>i {
+	font-size: 30px;
+}
+
+.benefit>h4 {
+	font-size: 20px;
+}
+
+.work>p {
+	margin: 0;
+}
+
+.index-warn {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 36px;
+}
+
+.cards-base {
+	margin-bottom: 20px;
+}
+
+.card {
+    height: 100%;
+}
+
+.card>img {
+    object-fit: cover;
+    height: 180px;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.btn {
+	border: 1px solid #666;
+	width: 100%;
+}
+
+.btn:hover {
+	background-color: #666 !important;
+	color: white !important;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.card-under {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.sidebar {
+	margin-bottom: 30px;
+}
+
+.rele-table>tbody>tr>td, .rele-table>tbody>tr, .rele-table>tbody {
+	border-color: rgba(0, 0, 0, 0.125);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.footer {
+	background-color: #125a96 !important;
+	padding: 20px 0 0 0;
+}
+
+.footer-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #d8e8f6;
+}
+
+.col-footer>p {
+	font-weight: normal;
+	color: white;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.footer-bottom {
+	padding: 20px 0;
+	margin-bottom: 0;
+	color: #d8e8f6;
+}
+
+/* Палитра: #d8e8f6, #8fb7d9, #558ab6, #125a96*/

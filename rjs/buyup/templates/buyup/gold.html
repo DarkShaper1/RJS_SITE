@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+	{{ content|safe }}
+    {% for item in cards %}
+            <div class="col-lg-4 col-md-6 col-sm-6 cards-base">
+              <div class="card">
+		    {% if item.photo %}
+                <img src="{{ item.photo.url }}" class="card-img-top" alt="...">
+		    {% else %}
+		    <img src="/media/photos/placeholder.png" class="card-img-top" alt="placeholder">
+		    {% endif %}
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                  {% if item.used_price %}
+                    <p class="card-text">Цена нового <span class="price">{{ item.get_price }}</span> за 
+                			{% if item.unit %}
+                                  	{{ item.unit }}
+                			{% else %}
+                				грамм
+                			{% endif %}
+		                </p>
+                    <p class="card-text">Цена б/у <span class="price">{{ item.get_used_price }}</span> за 
+                      {% if item.unit %}
+                                    {{ item.unit }}
+                      {% else %}
+                        грамм
+                      {% endif %}
+                    </p>
+                  {% else %}
+                    <p class="card-text">Цена <span class="price">{{ item.get_price }}</span> за 
+                      {% if item.unit %}
+                                    {{ item.unit }}
+                      {% else %}
+                        грамм
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                  <p class="card-under">{{ item.postscript }}</p>
+		      <a href="http://andret69.beget.tech/admin/buyup/cards/{{ item.id }}/change/">{{ item.price }}</a>
+                </div>
+              </div>
+            </div>
+    {% endfor %}
+</div>
+{% endblock %}

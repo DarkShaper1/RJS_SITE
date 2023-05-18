@@ -1,0 +1,28 @@
+{% load static %}
+{% load cache %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RJS</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e86223bbd1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+{% include 'inc/_header.html' %}
+        <div class="content col-lg-9 col-md-8 col-sm-12">
+            
+                {% block content %} {% endblock %}
+        
+
+        </div>
+      </div>
+    </div>
+{% include 'inc/_footer.html' %}
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

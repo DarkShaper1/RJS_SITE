@@ -1,0 +1,36 @@
+{% load static %}
+{% load menu %}
+{% load cache %}
+<div class="header">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'img/logo.png' %}" alt="logo" width="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="{% url 'home' %}">Главная</a>
+              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#">О нас</a>
+              {% if user.is_superuser %}
+              <a class="nav-link" href="/admin">Админка</a>
+              {% endif %}
+              <a href="tel:+79999999999" class="nav-link d-block d-lg-none">+79999999999</a>
+            </div>
+          </div>
+          <div class="phone d-none d-lg-block">
+            +79999999999
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="sidebar col-md-4 col-lg-3 col-sm-12">
+          
+            {% show_menu %}
+          
+        </div>
